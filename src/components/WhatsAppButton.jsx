@@ -2,7 +2,7 @@ import React from 'react';
 
 const WhatsAppButton = ({ 
   className = "", 
-  phoneNumber = "6288219334268", 
+  phoneNumber = "6282264745646", 
   message = "Halo The Bravo usrf, saya ingin booking lesson." 
 }) => {
 
