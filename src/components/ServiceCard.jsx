@@ -1,6 +1,15 @@
 import React from 'react';
 
-const ServiceCard = ({ title, price, description, image, }) => {
+const ServiceCard = ({ title, price, description, image }) => {
+  const phoneNumber = '6282264745646'; // ganti dengan nomor WA bisnis kamu
+
+  const handleBookNow = () => {
+    const message = `Hi The Bravo Surf, i would like to book "${title}" package.`;
+    const encodedMessage = encodeURIComponent(message);
+    const url = `https://api.whatsapp.com/send?phone=${phoneNumber}&text=${encodedMessage}`;
+    window.open(url, '_blank');
+  };
+
   return (
     <div className="bg-white rounded-xl overflow-hidden shadow-sm border border-[#005a8d]/5 hover:shadow-lg transition-shadow">
       <div 
@@ -15,7 +24,10 @@ const ServiceCard = ({ title, price, description, image, }) => {
           </span>
         </div>
         <p className="text-[#5e7c8d] mb-4">{description}</p>
-        <button className="w-full py-3 rounded-full border-2 border-[#005a8d] text-[#005a8d] font-bold hover:bg-[#005a8d] hover:text-white transition-colors">
+        <button 
+          onClick={handleBookNow}
+          className="w-full py-3 rounded-full border-2 border-[#005a8d] text-[#005a8d] font-bold hover:bg-[#005a8d] hover:text-white transition-colors"
+        >
           Book Now
         </button>
       </div>
