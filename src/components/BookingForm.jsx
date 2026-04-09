@@ -7,7 +7,7 @@ const BookingForm = () => {
     preferredDate: ''
   });
 
-  const whatsappNumber = '6288219334268'; // Ganti dengan nomor WhatsApp kamu tanpa + atau 0 di depan
+  const whatsappNumber = '6282264745646'; // Ganti dengan nomor WhatsApp kamu tanpa + atau 0 di depan
 
   const handleSubmit = (e) => {
     e.preventDefault();
