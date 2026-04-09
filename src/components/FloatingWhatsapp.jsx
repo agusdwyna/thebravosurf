@@ -1,5 +1,5 @@
 const FloatingWhatsApp = () => {
-  const phoneNumber = "6288219334268";
+  const phoneNumber = "6282264745646";
   const message = "Halo The Bravo Surf, saya ingin booking lesson.";
 
   const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
