@@ -53,8 +53,8 @@ const BaliSurfSchool = () => {
   <Footer /> */}
 
 </main>
-
-      <FloatingWhatsApp />
+{/* 
+      <FloatingWhatsApp /> */}
 
       {/* Custom CSS for hiding scrollbar */}
       <style jsx>{`
