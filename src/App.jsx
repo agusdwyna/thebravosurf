@@ -16,33 +16,29 @@ const BaliSurfSchool = () => {
       <main className="pt-14 relative">
 
   {/* OVERLAY WARNING */}
-  <div className="fixed inset-0 bg-black/80 z-50 flex items-center justify-center px-6">
-    <div className="bg-white max-w-xl w-full rounded-2xl shadow-2xl p-8 text-center">
-      
-      <h2 className="text-xl md:text-2xl font-bold text-red-600 mb-4">
-        Website Tidak Aktif
-      </h2>
+ <div className="fixed inset-0 bg-black z-50 flex items-center justify-center px-6">
+  <div className="bg-neutral-900 border border-red-700 max-w-xl w-full rounded-2xl shadow-2xl p-8 text-center text-white">
+    
+    <h2 className="text-2xl md:text-3xl font-bold text-red-600 mb-4 tracking-wide">
+      ⚠️ AKSES DIBLOKIR
+    </h2>
 
-      <p className="text-gray-700 mb-6 text-sm md:text-base leading-relaxed">
-        Website ini untuk sementara dinonaktifkan karena proses pembayaran belum diselesaikan oleh pemilik usaha.
-        <br /><br />
-        Untuk informasi lebih lanjut, silakan hubungi pengembang.
-      </p>
+    <p className="text-gray-300 mb-6 text-sm md:text-base leading-relaxed">
+     Pemilik usaha memblokir nomor saya tanpa melakuakn pembayaran dan diam diam meletakan website ke googlemapsnya. Tidak dapat dipercaya
+    </p>
 
-      <hr className="my-6" />
+    <hr className="my-6 border-red-800" />
 
-      <h2 className="text-xl md:text-2xl font-bold text-red-600 mb-4">
-        Website Temporarily Unavailable
-      </h2>
+    <h2 className="text-2xl md:text-3xl font-bold text-red-600 mb-4 tracking-wide">
+      ⚠️ ACCESS RESTRICTED
+    </h2>
 
-      <p className="text-gray-700 text-sm md:text-base leading-relaxed">
-        This website is temporarily disabled due to incomplete payment by the business owner.
-        <br /><br />
-        For further information, please contact the developer.
-      </p>
+    <p className="text-gray-300 text-sm md:text-base leading-relaxed">
+      The business owner has blocked my number without making payment and secretly placed the website on their Google Maps. Not Trusted.
+    </p>
 
-    </div>
   </div>
+</div>
 
   {/* OPTIONAL: kalau mau tetap render tapi ketutup */}
   {/* <Hero />
